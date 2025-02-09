@@ -1,0 +1,328 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    height: 32px;
+}
+
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.account-btn {
+    padding: 8px 12px;
+    border: 1px solid #333;
+    background: transparent;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.checkout-container {
+    display: flex;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+
+.checkout-form {
+    padding: 40px;
+    width: 60%;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 8px 0 4px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.kirk-beard {
+    display: flex;
+    gap: 10px;
+}
+
+.kirk-beard-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.credit-card {
+    display: flex;
+    gap: 10px;
+}
+
+.contact {
+    text-decoration: none;
+    color: #636B6F;
+}
+
+.credit-card input {
+    flex: 1;
+}
+
+.buy-btn {
+    background: #0a8f4c;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buy-btn:hover {
+    background: #09783e;
+}
+
+.help-text {
+    text-align: center;
+    margin-top: 10px;
+    color: #636B6F;
+}
+
+.powered-by {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+}
+
+.sidebar {
+    background: #1179BF;
+    color: white;
+    padding: 40px;
+    width: 40%;
+}
+
+.sidebar h3 {
+    font-size: 24px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.upgrade-text {
+    margin-top: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    margin-top: 30px;
+}
+
+.customer-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.tick {
+    background-color: rgba(255, 0, 0, 0);
+    border: white solid 2px;
+    border-radius: 50%;
+    width:40px;
+}
+.tick2 {
+    background-color: rgba(255, 0, 0, 0);
+    border: blue solid 2px;
+    border-radius: 50%;
+    width:100px;
+}
+.freelancer {
+    color: white;
+}
+.text-agency {
+    text-decoration: underline;
+    text-decoration-color: #B9F5FF;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 1;
+}
+.nine {
+    font-weight: 300;
+    font-size: 60px;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: gray;
+}
+
+@media (max-width: 768px) {
+    .checkout-container {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .checkout-form, .sidebar {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .credit-card {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .account-btn {
+        width: 100%;
+    }
+
+     .menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .checkout-form, .sidebar {
+        padding: 20px;
+    }
+
+    .buy-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .sidebar {
+        text-align: center;
+    }
+}
+
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.hamburger {
+    color: #333;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        border-top: 1px solid #ddd;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu .account-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    header {
+        position: relative;
+    }
+}

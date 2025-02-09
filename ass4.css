@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fdfa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;  
+    margin-top: 40px;    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+
+.left-section h2 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.left-section p {
+    font-size: 14px;
+    color: gray;
+}
+
+.form-container {
+    flex: 2;
+    padding: 20px;
+    min-width: 300px;
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.input-field {
+    flex: 1;
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #26c6da;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #0097a7;
+}
+
+
+.terms {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.terms a {
+    color: #26c6da;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+}
