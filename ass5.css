@@ -216,11 +216,14 @@ footer {
         max-width: 90%;
     }
 
-    .checkout-form, .sidebar {
-        width: 100%;
+    .checkout-form, 
+        width: 80%;
         padding: 30px;
     }
-
+    .sidebar {
+        width:100%;
+        padding:30px;
+    }
     .credit-card {
         flex-direction: column;
     }
